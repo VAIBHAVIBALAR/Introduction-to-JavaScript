@@ -273,10 +273,20 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
-}
+function vowelCounter(str) {
+      var count=0;
 
+
+    for(var i=0; i<=str.length-1; i++)
+    {
+      if (str.charAt(i) == "i" || str.charAt(i) == "e" || str.charAt(i) == "a" || str.charAt(i) == "o" || str.charAt(i) == "u")
+      {
+     count+=1;
+      }
+    }
+    return count;
+    
+}
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
@@ -294,5 +304,6 @@ export default{
     miles,
     feet,
     annoyingSong,
-    grade
+    grade,
+    vowelCounter
 }

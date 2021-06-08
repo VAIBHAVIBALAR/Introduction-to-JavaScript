@@ -84,3 +84,15 @@ describe('gradeFunction', ()=>{
 });
 
 
+
+//stretchgoals
+describe('vowelCounterFunction', ()=>{
+    it('maid has two vowel', ()=>{
+        expect(functions.vowelCounter("maid")).toBe(2);
+    })
+    it('merry has one vowel', ()=>{
+        expect(functions.vowelCounter("merry")).toBe(1);
+    })
+});
+
+
